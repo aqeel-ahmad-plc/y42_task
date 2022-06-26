@@ -33,8 +33,8 @@ class DataStorageLibraryTest(unittest.TestCase):
         assert len(self.library.get_all()) == 4
 
     def test_update(self):
-        self.library.update('1', {'name': 'John', 'age': '30'})
-        assert self.library.get('1')['name'] == 'John'
+        self.library.update('1', {'name': 'ali', 'age': '30'})
+        assert self.library.get('1')['name'] == 'ali'
 
     def test_insert_batch(self):
         self.library.insert_batch([{'id': '6', 'name': 'aqeel', 'age': '30'},
